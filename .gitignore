@@ -1,0 +1,13 @@
+# Public repository: only the static website and its documentation are published.
+# Internal planning files (SEO workbook, WordPress snapshots, logo originals) and the
+# src/ build tools stay private on the local machine.
+/*
+!/.gitignore
+!/website/
+!/README.md
+!/LAUNCH-CHECKLIST.md
+!/SEO-DECISIONS.md
+!/REDIRECTS.csv
+!/IMAGE-MANIFEST.csv
+!/IMAGE-CREDITS.csv
+!/.gitattributes
