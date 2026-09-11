@@ -11,3 +11,4 @@
 !/IMAGE-MANIFEST.csv
 !/IMAGE-CREDITS.csv
 !/.gitattributes
+!/vercel.json

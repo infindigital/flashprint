@@ -1,0 +1,1786 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "outputDirectory": "website",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/printing-company-in-dubai/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/printing-company-in-dubai",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/printing-shop-in-dubai/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/printing-shop-in-dubai",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/printing-press-in-dubai/",
+      "destination": "/printing-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/printing-press-in-dubai",
+      "destination": "/printing-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/signage-solutions-dubai/",
+      "destination": "/signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/signage-solutions-dubai",
+      "destination": "/signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/promotional-printing-dubai/",
+      "destination": "/marketing-promotional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/promotional-printing-dubai",
+      "destination": "/marketing-promotional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/cart/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/cart",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/checkout",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/my-account",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/shop/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/shop",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/business-cards-basic-printing-dubai/",
+      "destination": "/business-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/business-cards-basic-printing-dubai",
+      "destination": "/business-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/business-cards-and-gold-foil-printing-dubai/",
+      "destination": "/gold-foil-business-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/business-cards-and-gold-foil-printing-dubai",
+      "destination": "/gold-foil-business-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/letterheads-three-in-one-printing-dubai/",
+      "destination": "/letterhead-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/letterheads-three-in-one-printing-dubai",
+      "destination": "/letterhead-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/envelopes-printing-dubai/",
+      "destination": "/envelope-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/envelopes-printing-dubai",
+      "destination": "/envelope-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/invoice-receipt-books-header-printing-dubai/",
+      "destination": "/invoice-book-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/invoice-receipt-books-header-printing-dubai",
+      "destination": "/invoice-book-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ncr-carbonless-forms-printing-dubai/",
+      "destination": "/ncr-book-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/ncr-carbonless-forms-printing-dubai",
+      "destination": "/ncr-book-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/files-folders-printing-dubai/",
+      "destination": "/presentation-folder-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/files-folders-printing-dubai",
+      "destination": "/presentation-folder-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flyers-leaflets-printing-dubai/",
+      "destination": "/flyer-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flyers-leaflets-printing-dubai",
+      "destination": "/flyer-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brochures-printing-dubai/",
+      "destination": "/brochure-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brochures-printing-dubai",
+      "destination": "/brochure-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/posters-printing-dubai/",
+      "destination": "/poster-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/posters-printing-dubai",
+      "destination": "/poster-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/danglers-printing-dubai/",
+      "destination": "/marketing-promotional-printing-dubai/#danglers",
+      "permanent": true
+    },
+    {
+      "source": "/product/danglers-printing-dubai",
+      "destination": "/marketing-promotional-printing-dubai/#danglers",
+      "permanent": true
+    },
+    {
+      "source": "/product/tent-cards-printing-dubai/",
+      "destination": "/tent-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/tent-cards-printing-dubai",
+      "destination": "/tent-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/door-hangers-printing-dubai/",
+      "destination": "/hotel-door-hanger-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/door-hangers-printing-dubai",
+      "destination": "/hotel-door-hanger-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stickers-printing-dubai/",
+      "destination": "/sticker-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stickers-printing-dubai",
+      "destination": "/sticker-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/roll-up-banners-printing-dubai/",
+      "destination": "/roll-up-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/roll-up-banners-printing-dubai",
+      "destination": "/roll-up-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/x-banners-printing-dubai/",
+      "destination": "/x-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/x-banners-printing-dubai",
+      "destination": "/x-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flex-banners-printing-dubai/",
+      "destination": "/flex-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flex-banners-printing-dubai",
+      "destination": "/flex-banner-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/backlit-displays-printing-dubai/",
+      "destination": "/backlit-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/backlit-displays-printing-dubai",
+      "destination": "/backlit-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/office-name-boards-dubai/",
+      "destination": "/office-name-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/office-name-boards-dubai",
+      "destination": "/office-name-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flex-sign-boards-dubai/",
+      "destination": "/flex-sign-board-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/flex-sign-boards-dubai",
+      "destination": "/flex-sign-board-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acp-sign-boards-dubai/",
+      "destination": "/acp-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acp-sign-boards-dubai",
+      "destination": "/acp-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/3d-letter-signage-dubai/",
+      "destination": "/3d-letter-signs-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/3d-letter-signage-dubai",
+      "destination": "/3d-letter-signs-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/neon-sign-boards-dubai/",
+      "destination": "/neon-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/neon-sign-boards-dubai",
+      "destination": "/neon-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/led-light-boxes-dubai/",
+      "destination": "/led-light-box-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/led-light-boxes-dubai",
+      "destination": "/led-light-box-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/company-profile-printing-dubai/",
+      "destination": "/company-profile-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/company-profile-printing-dubai",
+      "destination": "/company-profile-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/brand-manuals-printing-dubai/",
+      "destination": "/branding-corporate-identity-dubai/#brand-manuals",
+      "permanent": true
+    },
+    {
+      "source": "/product/brand-manuals-printing-dubai",
+      "destination": "/branding-corporate-identity-dubai/#brand-manuals",
+      "permanent": true
+    },
+    {
+      "source": "/product/office-branding-dubai/",
+      "destination": "/office-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/office-branding-dubai",
+      "destination": "/office-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/corporate-identity-kits-printing-dubai/",
+      "destination": "/corporate-identity-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/corporate-identity-kits-printing-dubai",
+      "destination": "/corporate-identity-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/car-stickers-printing-dubai/",
+      "destination": "/vehicle-branding-dubai/#car-stickers",
+      "permanent": true
+    },
+    {
+      "source": "/product/car-stickers-printing-dubai",
+      "destination": "/vehicle-branding-dubai/#car-stickers",
+      "permanent": true
+    },
+    {
+      "source": "/product/full-vehicle-wrapping-dubai/",
+      "destination": "/vehicle-wrapping-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/full-vehicle-wrapping-dubai",
+      "destination": "/vehicle-wrapping-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/partial-wraps-dubai/",
+      "destination": "/partial-vehicle-wrapping-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/partial-wraps-dubai",
+      "destination": "/partial-vehicle-wrapping-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/fleet-branding-dubai/",
+      "destination": "/fleet-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/fleet-branding-dubai",
+      "destination": "/fleet-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/reflective-stickers-printing-dubai/",
+      "destination": "/reflective-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/reflective-stickers-printing-dubai",
+      "destination": "/reflective-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vinyl-stickers-printing-dubai/",
+      "destination": "/vinyl-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vinyl-stickers-printing-dubai",
+      "destination": "/vinyl-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/die-cut-stickers-printing-dubai/",
+      "destination": "/die-cut-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/die-cut-stickers-printing-dubai",
+      "destination": "/die-cut-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/transparent-stickers-printing-dubai/",
+      "destination": "/transparent-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/transparent-stickers-printing-dubai",
+      "destination": "/transparent-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/product-labels-printing-dubai/",
+      "destination": "/product-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/product-labels-printing-dubai",
+      "destination": "/product-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/barcode-labels-printing-dubai/",
+      "destination": "/barcode-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/barcode-labels-printing-dubai",
+      "destination": "/barcode-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/magnetic-stickers-printing-dubai/",
+      "destination": "/magnetic-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/magnetic-stickers-printing-dubai",
+      "destination": "/magnetic-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-t-shirts-printing-dubai/",
+      "destination": "/t-shirt-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-t-shirts-printing-dubai",
+      "destination": "/t-shirt-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/caps-printing-dubai/",
+      "destination": "/branded-caps-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/caps-printing-dubai",
+      "destination": "/branded-caps-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mugs-printing-dubai/",
+      "destination": "/custom-mug-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mugs-printing-dubai",
+      "destination": "/custom-mug-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pens-printing-dubai/",
+      "destination": "/branded-pens-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pens-printing-dubai",
+      "destination": "/branded-pens-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/keychains-printing-dubai/",
+      "destination": "/corporate-gifts-dubai/#keychains",
+      "permanent": true
+    },
+    {
+      "source": "/product/keychains-printing-dubai",
+      "destination": "/corporate-gifts-dubai/#keychains",
+      "permanent": true
+    },
+    {
+      "source": "/product/diaries-printing-dubai/",
+      "destination": "/custom-diary-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/diaries-printing-dubai",
+      "destination": "/custom-diary-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/usb-flash-drives-printing-dubai/",
+      "destination": "/branded-usb-flash-drives-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/usb-flash-drives-printing-dubai",
+      "destination": "/branded-usb-flash-drives-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/t-shirt-printing-dubai/",
+      "destination": "/t-shirt-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/t-shirt-printing-dubai",
+      "destination": "/t-shirt-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/polo-shirts-printing-dubai/",
+      "destination": "/apparel-fabric-printing-dubai/#polo-shirts",
+      "permanent": true
+    },
+    {
+      "source": "/product/polo-shirts-printing-dubai",
+      "destination": "/apparel-fabric-printing-dubai/#polo-shirts",
+      "permanent": true
+    },
+    {
+      "source": "/product/hoodies-printing-dubai/",
+      "destination": "/apparel-fabric-printing-dubai/#hoodies",
+      "permanent": true
+    },
+    {
+      "source": "/product/hoodies-printing-dubai",
+      "destination": "/apparel-fabric-printing-dubai/#hoodies",
+      "permanent": true
+    },
+    {
+      "source": "/product/uniform-printing-dubai/",
+      "destination": "/uniform-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/uniform-printing-dubai",
+      "destination": "/uniform-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-vest-printing-dubai/",
+      "destination": "/safety-vest-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-vest-printing-dubai",
+      "destination": "/safety-vest-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/doctor-cap-and-coat-printing-dubai/",
+      "destination": "/apparel-fabric-printing-dubai/#doctor-cap-and-coat",
+      "permanent": true
+    },
+    {
+      "source": "/product/doctor-cap-and-coat-printing-dubai",
+      "destination": "/apparel-fabric-printing-dubai/#doctor-cap-and-coat",
+      "permanent": true
+    },
+    {
+      "source": "/product/medical-scrubs-printing-dubai/",
+      "destination": "/apparel-fabric-printing-dubai/#doctor-uniform-medical-scrubs",
+      "permanent": true
+    },
+    {
+      "source": "/product/medical-scrubs-printing-dubai",
+      "destination": "/apparel-fabric-printing-dubai/#doctor-uniform-medical-scrubs",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-bags-printing-dubai/",
+      "destination": "/paper-bag-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-bags-printing-dubai",
+      "destination": "/paper-bag-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kraft-bags-printing-dubai/",
+      "destination": "/kraft-bag-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/kraft-bags-printing-dubai",
+      "destination": "/kraft-bag-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-boxes-printing-dubai/",
+      "destination": "/custom-box-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-boxes-printing-dubai",
+      "destination": "/custom-box-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/product-packaging-printing-dubai/",
+      "destination": "/product-packaging-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/product-packaging-printing-dubai",
+      "destination": "/product-packaging-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/labels-tags-printing-dubai/",
+      "destination": "/product-tags-and-labels-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/labels-tags-printing-dubai",
+      "destination": "/product-tags-and-labels-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/exhibition-stands-printing-dubai/",
+      "destination": "/exhibition-stand-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/exhibition-stands-printing-dubai",
+      "destination": "/exhibition-stand-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pop-up-displays-printing-dubai/",
+      "destination": "/pop-up-display-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pop-up-displays-printing-dubai",
+      "destination": "/pop-up-display-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/event-backdrops-printing-dubai/",
+      "destination": "/event-backdrop-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/event-backdrops-printing-dubai",
+      "destination": "/event-backdrop-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stage-branding-dubai/",
+      "destination": "/stage-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/stage-branding-dubai",
+      "destination": "/stage-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/directional-signage-dubai/",
+      "destination": "/event-printing-dubai/#directional-signage",
+      "permanent": true
+    },
+    {
+      "source": "/product/directional-signage-dubai",
+      "destination": "/event-printing-dubai/#directional-signage",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-signs-printing-dubai/",
+      "destination": "/safety-signs-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-signs-printing-dubai",
+      "destination": "/safety-signs-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/warning-labels-printing-dubai/",
+      "destination": "/warning-labels-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/warning-labels-printing-dubai",
+      "destination": "/warning-labels-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/floor-stickers-printing-dubai/",
+      "destination": "/safety-industrial-printing-dubai/#floor-stickers",
+      "permanent": true
+    },
+    {
+      "source": "/product/floor-stickers-printing-dubai",
+      "destination": "/safety-industrial-printing-dubai/#floor-stickers",
+      "permanent": true
+    },
+    {
+      "source": "/product/reflective-signage-dubai/",
+      "destination": "/reflective-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/reflective-signage-dubai",
+      "destination": "/reflective-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/construction-boards-printing-dubai/",
+      "destination": "/safety-industrial-printing-dubai/#construction-boards",
+      "permanent": true
+    },
+    {
+      "source": "/product/construction-boards-printing-dubai",
+      "destination": "/safety-industrial-printing-dubai/#construction-boards",
+      "permanent": true
+    },
+    {
+      "source": "/product/acrylic-letter-cutting-dubai/",
+      "destination": "/acrylic-letter-cutting-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acrylic-letter-cutting-dubai",
+      "destination": "/acrylic-letter-cutting-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mdf-cutting-dubai/",
+      "destination": "/laser-cutting-engraving-dubai/#mdf-cutting",
+      "permanent": true
+    },
+    {
+      "source": "/product/mdf-cutting-dubai",
+      "destination": "/laser-cutting-engraving-dubai/#mdf-cutting",
+      "permanent": true
+    },
+    {
+      "source": "/product/wood-engraving-dubai/",
+      "destination": "/wood-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wood-engraving-dubai",
+      "destination": "/wood-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/metal-engraving-dubai/",
+      "destination": "/metal-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/metal-engraving-dubai",
+      "destination": "/metal-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/plaques-trophies-engraving-dubai/",
+      "destination": "/plaques-and-trophies-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/plaques-trophies-engraving-dubai",
+      "destination": "/plaques-and-trophies-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/shelf-talkers-printing-dubai/",
+      "destination": "/shelf-talkers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/shelf-talkers-printing-dubai",
+      "destination": "/shelf-talkers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wobblers-printing-dubai/",
+      "destination": "/wobbler-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wobblers-printing-dubai",
+      "destination": "/wobbler-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/standee-displays-printing-dubai/",
+      "destination": "/standee-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/standee-displays-printing-dubai",
+      "destination": "/standee-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/counter-displays-printing-dubai/",
+      "destination": "/counter-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/counter-displays-printing-dubai",
+      "destination": "/counter-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/end-cap-displays-printing-dubai/",
+      "destination": "/end-cap-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/end-cap-displays-printing-dubai",
+      "destination": "/end-cap-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wall-murals-printing-dubai/",
+      "destination": "/wall-mural-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wall-murals-printing-dubai",
+      "destination": "/wall-mural-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/frosted-glass-film-dubai/",
+      "destination": "/frosted-glass-film-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/frosted-glass-film-dubai",
+      "destination": "/frosted-glass-film-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glass-stickers-printing-dubai/",
+      "destination": "/glass-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/glass-stickers-printing-dubai",
+      "destination": "/glass-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/floor-graphics-printing-dubai/",
+      "destination": "/floor-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/floor-graphics-printing-dubai",
+      "destination": "/floor-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wayfinding-graphics-dubai/",
+      "destination": "/wayfinding-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wayfinding-graphics-dubai",
+      "destination": "/wayfinding-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wallpaper-printing-dubai/",
+      "destination": "/wallpaper-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wallpaper-printing-dubai",
+      "destination": "/wallpaper-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/canvas-printing-dubai/",
+      "destination": "/canvas-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/canvas-printing-dubai",
+      "destination": "/canvas-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/interior-panels-printing-dubai/",
+      "destination": "/interior-panel-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/interior-panels-printing-dubai",
+      "destination": "/interior-panel-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/window-displays-printing-dubai/",
+      "destination": "/window-display-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/window-displays-printing-dubai",
+      "destination": "/window-display-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/project-sign-boards-dubai/",
+      "destination": "/project-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/project-sign-boards-dubai",
+      "destination": "/project-sign-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-boards-printing-dubai/",
+      "destination": "/construction-safety-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-boards-printing-dubai",
+      "destination": "/construction-safety-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hoarding-graphics-printing-dubai/",
+      "destination": "/hoarding-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hoarding-graphics-printing-dubai",
+      "destination": "/hoarding-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/directional-site-signage-dubai/",
+      "destination": "/construction-site-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/directional-site-signage-dubai",
+      "destination": "/construction-site-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/certificates-printing-dubai/",
+      "destination": "/certificate-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/certificates-printing-dubai",
+      "destination": "/certificate-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/id-cards-printing-dubai/",
+      "destination": "/id-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/id-cards-printing-dubai",
+      "destination": "/id-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/training-manuals-printing-dubai/",
+      "destination": "/training-manual-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/training-manuals-printing-dubai",
+      "destination": "/training-manual-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/report-cards-printing-dubai/",
+      "destination": "/report-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/report-cards-printing-dubai",
+      "destination": "/report-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/exam-papers-printing-dubai/",
+      "destination": "/exam-paper-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/exam-papers-printing-dubai",
+      "destination": "/exam-paper-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/restaurant-menus-printing-dubai/",
+      "destination": "/restaurant-menu-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/restaurant-menus-printing-dubai",
+      "destination": "/restaurant-menu-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/table-mats-printing-dubai/",
+      "destination": "/printed-table-mats-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/table-mats-printing-dubai",
+      "destination": "/printed-table-mats-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-door-hanger-printing-dubai/",
+      "destination": "/hotel-door-hanger-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-door-hanger-printing-dubai",
+      "destination": "/hotel-door-hanger-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/room-signage-dubai/",
+      "destination": "/hospitality-printing-dubai/#room-signage",
+      "permanent": true
+    },
+    {
+      "source": "/product/room-signage-dubai",
+      "destination": "/hospitality-printing-dubai/#room-signage",
+      "permanent": true
+    },
+    {
+      "source": "/product/table-tent-card-printing-dubai/",
+      "destination": "/tent-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/table-tent-card-printing-dubai",
+      "destination": "/tent-card-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/medical-forms-printing-dubai/",
+      "destination": "/medical-form-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/medical-forms-printing-dubai",
+      "destination": "/medical-form-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/prescription-pads-printing-dubai/",
+      "destination": "/prescription-pad-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/prescription-pads-printing-dubai",
+      "destination": "/prescription-pad-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hospital-signage-dubai/",
+      "destination": "/hospital-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/hospital-signage-dubai",
+      "destination": "/hospital-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-warning-labels-printing-dubai/",
+      "destination": "/warning-labels-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/safety-warning-labels-printing-dubai",
+      "destination": "/warning-labels-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/patient-boards-printing-dubai/",
+      "destination": "/patient-information-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/patient-boards-printing-dubai",
+      "destination": "/patient-information-boards-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mandatory-signage-dubai/",
+      "destination": "/mandatory-safety-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/mandatory-signage-dubai",
+      "destination": "/mandatory-safety-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/regulatory-stickers-printing-dubai/",
+      "destination": "/regulatory-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/regulatory-stickers-printing-dubai",
+      "destination": "/regulatory-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/facility-identification-boards-dubai/",
+      "destination": "/facility-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/facility-identification-boards-dubai",
+      "destination": "/facility-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pvc-stickers-printing-dubai/",
+      "destination": "/pvc-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/pvc-stickers-printing-dubai",
+      "destination": "/pvc-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-stickers-printing-dubai/",
+      "destination": "/paper-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/paper-stickers-printing-dubai",
+      "destination": "/paper-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-reflective-sticker-printing-dubai/",
+      "destination": "/reflective-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-reflective-sticker-printing-dubai",
+      "destination": "/reflective-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-transparent-stickers-printing-dubai/",
+      "destination": "/transparent-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/custom-transparent-stickers-printing-dubai",
+      "destination": "/transparent-sticker-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/magnetic-stickers-dubai/",
+      "destination": "/magnetic-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/magnetic-stickers-dubai",
+      "destination": "/magnetic-stickers-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sign-board-installation-dubai/",
+      "destination": "/sign-board-installation-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sign-board-installation-dubai",
+      "destination": "/sign-board-installation-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vehicle-branding-installation-dubai/",
+      "destination": "/vehicle-branding-installation-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vehicle-branding-installation-dubai",
+      "destination": "/vehicle-branding-installation-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sticker-fixing-dubai/",
+      "destination": "/fabrication-installation-services-dubai/#sticker-fixing",
+      "permanent": true
+    },
+    {
+      "source": "/product/sticker-fixing-dubai",
+      "destination": "/fabrication-installation-services-dubai/#sticker-fixing",
+      "permanent": true
+    },
+    {
+      "source": "/product/on-site-branding-dubai/",
+      "destination": "/on-site-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/on-site-branding-dubai",
+      "destination": "/on-site-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/graphic-design-dubai/",
+      "destination": "/graphic-design-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/graphic-design-dubai",
+      "destination": "/graphic-design-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/logo-design-dubai/",
+      "destination": "/logo-design-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/logo-design-dubai",
+      "destination": "/logo-design-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/artwork-correction-dubai/",
+      "destination": "/artwork-correction-for-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/artwork-correction-dubai",
+      "destination": "/artwork-correction-for-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/print-ready-file-setup-dubai/",
+      "destination": "/print-ready-file-setup-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/print-ready-file-setup-dubai",
+      "destination": "/print-ready-file-setup-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sign-maintenance-dubai/",
+      "destination": "/design-creative-services-dubai/#sign-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/product/sign-maintenance-dubai",
+      "destination": "/design-creative-services-dubai/#sign-maintenance",
+      "permanent": true
+    },
+    {
+      "source": "/product/sticker-removal-dubai/",
+      "destination": "/sticker-removal-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/sticker-removal-dubai",
+      "destination": "/sticker-removal-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/rebranding-services-dubai/",
+      "destination": "/rebranding-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/rebranding-services-dubai",
+      "destination": "/rebranding-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/damage-replacement-printing-dubai/",
+      "destination": "/signage-replacement-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/damage-replacement-printing-dubai",
+      "destination": "/signage-replacement-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vinyl-printing-dubai/",
+      "destination": "/vinyl-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/vinyl-printing-dubai",
+      "destination": "/vinyl-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/one-way-vision-printing-dubai/",
+      "destination": "/large-format-printing-dubai/#one-way-vision",
+      "permanent": true
+    },
+    {
+      "source": "/product/one-way-vision-printing-dubai",
+      "destination": "/large-format-printing-dubai/#one-way-vision",
+      "permanent": true
+    },
+    {
+      "source": "/product/foam-board-printing-dubai/",
+      "destination": "/large-format-printing-dubai/#foam-board-printing",
+      "permanent": true
+    },
+    {
+      "source": "/product/foam-board-printing-dubai",
+      "destination": "/large-format-printing-dubai/#foam-board-printing",
+      "permanent": true
+    },
+    {
+      "source": "/product/acrylic-sign-board-dubai/",
+      "destination": "/acrylic-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/acrylic-sign-board-dubai",
+      "destination": "/acrylic-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/foam-board-signs-dubai/",
+      "destination": "/indoor-signage-dubai/#foam-board-signs",
+      "permanent": true
+    },
+    {
+      "source": "/product/foam-board-signs-dubai",
+      "destination": "/indoor-signage-dubai/#foam-board-signs",
+      "permanent": true
+    },
+    {
+      "source": "/product/reception-signage-dubai/",
+      "destination": "/reception-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/reception-signage-dubai",
+      "destination": "/reception-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wall-graphics-printing-dubai/",
+      "destination": "/wall-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/wall-graphics-printing-dubai",
+      "destination": "/wall-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/uncategorized/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/uncategorized",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/best-selling/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/best-selling",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/new-arrivals/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/new-arrivals",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/latest-collection/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/latest-collection",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/business-stationery-printing-dubai/",
+      "destination": "/business-stationery-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/business-stationery-printing-dubai",
+      "destination": "/business-stationery-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/marketing-promotional-printing-dubai/",
+      "destination": "/marketing-promotional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/marketing-promotional-printing-dubai",
+      "destination": "/marketing-promotional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/large-format-signage-printing-dubai/",
+      "destination": "/large-format-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/large-format-signage-printing-dubai",
+      "destination": "/large-format-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/outdoor-signage-dubai/",
+      "destination": "/outdoor-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/outdoor-signage-dubai",
+      "destination": "/outdoor-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/corporate-gifts-promotional-items-printing-dubai/",
+      "destination": "/corporate-gifts-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/corporate-gifts-promotional-items-printing-dubai",
+      "destination": "/corporate-gifts-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/event-exhibition-printing-dubai/",
+      "destination": "/event-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/event-exhibition-printing-dubai",
+      "destination": "/event-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/indoor-signage-dubai/",
+      "destination": "/indoor-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/indoor-signage-dubai",
+      "destination": "/indoor-signage-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/branding-corporate-identity-dubai/",
+      "destination": "/branding-corporate-identity-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/branding-corporate-identity-dubai",
+      "destination": "/branding-corporate-identity-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/vehicle-branding-printing-dubai/",
+      "destination": "/vehicle-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/vehicle-branding-printing-dubai",
+      "destination": "/vehicle-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/sticker-label-printing-dubai/",
+      "destination": "/sticker-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/sticker-label-printing-dubai",
+      "destination": "/sticker-label-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/apparel-fabric-printing-dubai/",
+      "destination": "/apparel-fabric-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/apparel-fabric-printing-dubai",
+      "destination": "/apparel-fabric-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/packaging-printing-dubai/",
+      "destination": "/packaging-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/packaging-printing-dubai",
+      "destination": "/packaging-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/safety-industrial-printing-dubai/",
+      "destination": "/safety-industrial-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/safety-industrial-printing-dubai",
+      "destination": "/safety-industrial-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/laser-cutting-engraving-dubai/",
+      "destination": "/laser-cutting-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/laser-cutting-engraving-dubai",
+      "destination": "/laser-cutting-engraving-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pos-retail-display-printing-dubai/",
+      "destination": "/pos-retail-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/pos-retail-display-printing-dubai",
+      "destination": "/pos-retail-display-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/wall-floor-glass-branding-dubai/",
+      "destination": "/wall-floor-glass-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/wall-floor-glass-branding-dubai",
+      "destination": "/wall-floor-glass-branding-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/architectural-interior-graphics-printing-dubai/",
+      "destination": "/architectural-interior-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/architectural-interior-graphics-printing-dubai",
+      "destination": "/architectural-interior-graphics-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/construction-site-printing-dubai/",
+      "destination": "/construction-site-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/construction-site-printing-dubai",
+      "destination": "/construction-site-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/educational-institutional-printing-dubai/",
+      "destination": "/educational-institutional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/educational-institutional-printing-dubai",
+      "destination": "/educational-institutional-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/hospitality-printing-dubai/",
+      "destination": "/hospitality-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/hospitality-printing-dubai",
+      "destination": "/hospitality-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/healthcare-medical-printing-dubai/",
+      "destination": "/healthcare-medical-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/healthcare-medical-printing-dubai",
+      "destination": "/healthcare-medical-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/government-compliance-printing-dubai/",
+      "destination": "/government-compliance-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/government-compliance-printing-dubai",
+      "destination": "/government-compliance-printing-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/sticker-materials-dubai/",
+      "destination": "/sticker-materials-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/sticker-materials-dubai",
+      "destination": "/sticker-materials-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/fabrication-installation-services-dubai/",
+      "destination": "/fabrication-installation-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/fabrication-installation-services-dubai",
+      "destination": "/fabrication-installation-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/design-creative-services-dubai/",
+      "destination": "/design-creative-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/design-creative-services-dubai",
+      "destination": "/design-creative-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/signage-maintenance-replacement-service-dubai/",
+      "destination": "/maintenance-replacement-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/signage-maintenance-replacement-service-dubai",
+      "destination": "/maintenance-replacement-services-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category/",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/product-category",
+      "destination": "/printing-products-dubai/",
+      "permanent": true
+    },
+    {
+      "source": "/(page-sitemap|product-sitemap|product_cat-sitemap|local-sitemap|sitemap_index|wp-sitemap).xml",
+      "destination": "/sitemap.xml",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(css|js|fonts)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(images|brand)/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=604800"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        }
+      ]
+    }
+  ]
+}

@@ -34,7 +34,8 @@ The `website/` folder is the complete site. Upload **its contents** to the web r
 It works on any static host: cPanel/Apache, Nginx, Netlify, Cloudflare Pages, Vercel (static), S3, etc.
 
 - **Apache / cPanel:** `.htaccess` is included (redirects, 404 page, caching). Make sure hidden files are uploaded.
-- **Netlify / Cloudflare Pages:** `_redirects` is picked up automatically.
+- **Vercel:** import the repository; `vercel.json` (repo root) tells Vercel to serve the `website/` folder with no build step, and carries the 301 redirects and cache headers.
+- **Netlify / Cloudflare Pages:** publish directory `website`; `_redirects` is picked up automatically.
 - **Nginx:** convert `REDIRECTS.csv` to `return 301` rules; set `error_page 404 /404.html;`.
 
 To preview locally without uploading: `cd src && npm run serve` → http://localhost:8080 (or any static server pointed at `website/`).
