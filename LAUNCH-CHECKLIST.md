@@ -4,19 +4,19 @@ Items the website cannot know on its own. Nothing below was invented; each is ei
 
 ## Must do before launch
 
-- [ ] **Connect the enquiry form** — set `formEndpoint` (+ `formAccessKey`) in `src/data/site.js` and rebuild
+- [ ] **Connect the enquiry form** — set `formEndpoint` (+ `formAccessKey`) in `content/site.js` and rebuild
       (see README → Enquiry form). Until then, submissions open the visitor's email app instead of sending directly.
 - [ ] **Confirm WhatsApp number** — the site uses +971 58 891 7109 (the phone number on the current website) for WhatsApp.
 - [ ] **Social profile URLs** — the current site shows Facebook, Instagram, YouTube and LinkedIn icons but the URLs are not
-      in the project files. Add them to `social` in `src/data/site.js`; empty ones are hidden. (WhatsApp, email and phone icons are always shown.)
+      in the project files. Add them to `social` in `content/site.js`; empty ones are hidden. (WhatsApp, email and phone icons are always shown.)
 - [ ] **Testimonials** — the homepage shows three clearly marked placeholder cards. Replace with verified client quotes
-      (`src/pages/home.js`, search for PLACEHOLDER) or remove the section. Do not publish invented reviews.
+      (`content/pages.js` → `home.testimonials`) or remove the section. Do not publish invented reviews.
 - [ ] **Portfolio** — all 16 portfolio items use temporary stock photos. Replace with real completed projects
-      (IMAGE-MANIFEST.csv → folder `portfolio`), and adjust titles/captions in `src/data/static-images.js`.
-- [ ] **Replace temporary product photography** with the custom image library (IMAGE-MANIFEST.csv has every slot and prompt).
+      (IMAGE-LIST.csv → folder `portfolio`), and adjust titles/captions in `content/portfolio.js`.
+- [ ] **Replace temporary product photography** with the custom image library (IMAGE-LIST.csv has every file, its exact size and a brief).
 - [ ] **Legal pages** — Privacy Policy and Terms are sensible templates for a UAE printing business; have them reviewed
       and aligned with the terms on your quotations.
-- [ ] **Analytics** — add the GA4 ID (`ga4` in `src/data/site.js`), verify the domain in Google Search Console and submit
+- [ ] **Analytics** — add the GA4 ID (`ga4` in `content/site.js`), verify the domain in Google Search Console and submit
       `https://flashprintsolution.com/sitemap.xml`.
 - [ ] **Redirects live** — after switching hosting, spot-check a few old URLs from `REDIRECTS.csv` (e.g.
       `/product/kraft-bags-printing-dubai/` → `/kraft-bag-printing-dubai/`). Cloudflare can keep managing HTTPS/www.

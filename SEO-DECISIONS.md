@@ -1,6 +1,6 @@
 # How the SEO workbook was applied
 
-Source of truth: `Seo Sheet/Flash Print Plan.xlsx` (all 18 sheets read; snapshot in `src/data/workbook.json`).
+Source of truth: `Seo Sheet/Flash Print Plan.xlsx` (all 18 sheets read; snapshot in `tools/data/workbook.json`).
 
 ## Site architecture
 

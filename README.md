@@ -3,123 +3,70 @@
 A pure static HTML5 / CSS3 / vanilla JavaScript website for **flashprintsolution.com**, replacing the WordPress site.
 No framework, no CMS, no database, no server-side code.
 
-> **This repository contains the deployable website (`website/`) and its documentation only.** The optional `src/` build tools,
-> the SEO workbook and other planning files are kept privately and are not published here. Sections below that mention
-> `src/` apply to the private working copy.
+> **The public GitHub repository contains the deployable website (`website/`) and its documentation only.**
+> The `content/` and `tools/` folders, the SEO workbook and other planning files are kept privately on your computer.
 
 ```
 Flashprint Website/
-├── website/                 ← THE WEBSITE. Upload the contents of this folder to your web host.
-│   ├── index.html           home page
-│   ├── <page-url>/index.html   every page lives in its own folder → clean URLs like /business-card-printing-dubai/
-│   ├── assets/css/main.css  the whole design system (one file)
-│   ├── assets/js/main.js    all behaviour (menus, enquiry modal, WhatsApp, gallery, filters) — no libraries
-│   ├── assets/images/…      all images, organised by page type (see "Images")
-│   ├── assets/fonts/        self-hosted Schibsted Grotesk (SIL Open Font Licence)
-│   ├── assets/brand/        official logo files (trimmed of padding only) + favicons
-│   ├── sitemap.xml, robots.txt, 404.html, site.webmanifest, favicon.ico
-│   ├── .htaccess            Apache/cPanel: 301 redirects from the old WordPress URLs, caching, 404 page
-│   └── _redirects           the same redirects in Netlify / Cloudflare Pages format
-├── src/                     optional maintenance tools (NOT uploaded). Needs Node.js only if you use them.
-├── REDIRECTS.csv            old WordPress URL → new URL, for your records / Search Console
-├── IMAGE-MANIFEST.csv       every image slot: file name, size, ratio, alt text and the prompt for the custom photo
-├── IMAGE-CREDITS.csv        sources of the temporary stock photos
-├── SEO-DECISIONS.md         how the workbook was applied (canonical pages, duplicates, keyword conflicts)
-└── LAUNCH-CHECKLIST.md      things only the business can confirm before going live
+├── website/            ← THE WEBSITE (178 HTML pages + CSS, JS, images). This is what gets published.
+├── content/            ← ALL EDITABLE TEXT (business details, page text, products, blog). See content/README.md
+├── tools/              ← small helper that turns content/ into the HTML in website/ (needs Node.js only when you use it)
+├── IMAGE-LIST.csv      ← EVERY image file: path, exact width × height, what it is, which page, brief for the new photo
+├── REDIRECTS.csv       ← old WordPress URL → new URL (301)
+├── SEO-DECISIONS.md    ← how the SEO workbook was applied
+├── LAUNCH-CHECKLIST.md ← things only the business can confirm before going live
+├── vercel.json         ← tells Vercel to serve the website/ folder (+ redirects)
+└── Logo/, Seo Sheet/, Wordpress Snapshots/   ← your original project files (untouched)
 ```
 
-## Deploying
+## Publishing
 
-The `website/` folder is the complete site. Upload **its contents** to the web root (`public_html/` on cPanel).
-It works on any static host: cPanel/Apache, Nginx, Netlify, Cloudflare Pages, Vercel (static), S3, etc.
+- **Vercel (current):** every push to `main` on GitHub redeploys https://flashprint-five.vercel.app automatically.
+  `vercel.json` serves `website/` and carries the 301 redirects.
+- **Any other host:** upload the *contents* of `website/` to the web root. `.htaccess` (Apache/cPanel) and `_redirects`
+  (Netlify/Cloudflare Pages) are included.
 
-- **Apache / cPanel:** `.htaccess` is included (redirects, 404 page, caching). Make sure hidden files are uploaded.
-- **Vercel:** import the repository; `vercel.json` (repo root) tells Vercel to serve the `website/` folder with no build step, and carries the 301 redirects and cache headers.
-- **Netlify / Cloudflare Pages:** publish directory `website`; `_redirects` is picked up automatically.
-- **Nginx:** convert `REDIRECTS.csv` to `return 301` rules; set `error_page 404 /404.html;`.
+## Replacing images
 
-To preview locally without uploading: `cd src && npm run serve` → http://localhost:8080 (or any static server pointed at `website/`).
-Opening the HTML files directly from disk will not work properly because links use clean root URLs (`/about/`).
+Open **`IMAGE-LIST.csv`** in Excel or Google Sheets. Each row is one image file with:
+the file path inside `website/`, the **exact width and height** a replacement must have, the aspect ratio, what the image is,
+the page it appears on, its description (alt text) and a brief for the new photo.
 
-## Before launch
+1. Create your photo and crop it to the aspect ratio shown.
+2. Export at exactly the width × height shown — WebP for `.webp` rows, JPG for `.jpg` rows.
+3. Save with the **same file name** and overwrite the old file. Most photos have two rows (small + large size): replace both.
 
-Work through **LAUNCH-CHECKLIST.md** — in particular: connect the enquiry form, add social-profile URLs,
-replace placeholder testimonials, and replace the temporary stock photography.
+No HTML changes are needed. Rows marked “SHARED … (replace first)” currently borrow their category’s photo.
+(Optional shortcut: put one large photo in `tools/images/custom/<folder>/<name>.jpg` and run `npm run images` in `tools/`
+— it crops and exports every size for you.)
+
+## Editing text
+
+All text lives in `content/` — see **`content/README.md`** for which file controls which page.
+After editing, run `npm run build` inside `tools/` and publish `website/`.
 
 ## Enquiry form & WhatsApp
 
-- Every product page has **Enquire Now** (opens a modal with the product name pre-filled) and **WhatsApp Us**
-  (opens WhatsApp with “Hello, I'm interested in <product> and would like more information.”).
-  Mobile opens the WhatsApp app directly (wa.me); desktop opens WhatsApp Web directly.
-- Catalog-only items on category pages have the same two buttons.
-- The WhatsApp number, phone, email, address and hours live in one place: `src/data/site.js`
-  (they are baked into the HTML, so edit there and rebuild — or search-and-replace in `website/` if you are not using the tools).
-- **Form delivery:** a static site needs a form service to email submissions. Set `formEndpoint` (and `formAccessKey` if the
-  service uses one) in `src/data/site.js`, then rebuild. Any JSON form service works, e.g. Web3Forms
-  (`https://api.web3forms.com/submit` + access key) or Formspree (`https://formspree.io/f/<id>`).
-  **Until an endpoint is set, the form validates and then opens the visitor's email app with the enquiry pre-written
-  to sales@flashprintsolution.com**, and the success message tells them to press send.
-- Google Analytics 4: set `ga4` in `src/data/site.js`. The site already sends `generate_lead`, `whatsapp_click`,
-  `phone_click`, `email_click` and `enquiry_open` events.
+- **Enquire Now** on every product opens a form with the product name already filled in; **WhatsApp Us** opens WhatsApp
+  with “Hello, I'm interested in <product> and would like more information.” (app on phones, WhatsApp Web on desktop).
+- **Email delivery of the form:** add your form service URL/key in `content/site.js` (`formEndpoint`, `formAccessKey`)
+  and rebuild. Until then the form opens the visitor's email app with the enquiry pre-written to sales@flashprintsolution.com.
+- Google Analytics 4: set `ga4` in `content/site.js`. Lead, WhatsApp, phone and email clicks are already tracked.
 
-## Images
-
-Every image is a fixed “slot” with a fixed file name and aspect ratio, so **replacing an image never requires touching HTML**.
-
-- Files: `website/assets/images/<folder>/<name>-<width>.webp`, two widths per image (e.g. `-640` and `-1200`).
-- Product pages have four roles: `-hero`, `-detail` (material/finish), `-application` (in use), `-production`.
-- `IMAGE-MANIFEST.csv` lists every slot with its folder, sizes, aspect ratio, alt text, the page(s) it appears on,
-  and a ready-to-use prompt for the custom photograph (following the workbook's Image Plan: fictional/unbranded products,
-  never the Flash Print Solution logo on generic products).
-
-**Replacing with your custom photos (recommended way, needs Node.js):**
-1. Put the photo at `src/images/custom/<folder>/<name>.jpg` (folder + name from IMAGE-MANIFEST.csv, any size ≥ 1600 px wide).
-2. `cd src && npm install` (first time only), then `npm run images`. It crops to the right ratio and writes both WebP sizes.
-
-**Without Node.js:** export the image yourself at the exact sizes listed in the manifest (same aspect ratio) as WebP,
-and overwrite both files with the same names.
-
-The current photos are **temporary** stock images (Unsplash licence, see IMAGE-CREDITS.csv), each hand-reviewed to show
-generic, unbranded products; no photo is reused across unrelated pages. Eight product-page slots currently share their
-category's photo — IMAGE-MANIFEST.csv marks them "SHARED … (replace first)". The portfolio uses stock placeholders too —
-replace with real completed projects before launch.
-
-(How the temporary set was produced, if you ever need to redo it: `scripts/stock-candidates.js` finds candidates and builds
-contact sheets, reviewers record ranked picks in `src/data/stock-picks/`, `scripts/stock-resolve.js` assigns unique photos,
-`scripts/stock-proof.js` makes proof sheets, `npm run images` processes them. Downloaded masters are cached in `src/images/stock/`.)
-
-## Editing content (with the tools)
-
-All text lives in plain JavaScript data files under `src/`:
-
-| What | File |
-|---|---|
-| Business details, form endpoint, analytics | `src/data/site.js` |
-| Categories & products (from the SEO workbook) | `src/data/catalog.js` ← reads `src/data/workbook.json` |
-| Category + product page copy | `src/content/categories/<category>.js` |
-| Service hub pages | `src/content/services.js` |
-| Industry pages | `src/content/industries.js` |
-| Blog articles | `src/content/blog/part1.js`, `part2.js` |
-| Home, About, How it works, Contact, 404 copy | `src/pages/*.js` |
-| Redirects | `src/data/redirects.js` |
-
-Then run:
+## Tools (optional, needs Node.js)
 
 ```bash
-cd src
-npm install            # first time only (installs the image tool + the QA browser driver; nothing is added to the website)
-npm run build          # regenerates every page, sitemap.xml, redirects and manifests into ../website
-npm run images         # only if you changed/added images
-npm run qa             # links, SEO tags, headings, images, overflow at 7 screen widths, console errors, modal/WhatsApp behaviour
-npm run qa:all         # the same browser checks on every page at every width (slow)
-npm run qa:keyboard    # keyboard / focus accessibility
-npm run qa:vitals      # LCP, CLS and page weight on key pages
-node scripts/validate-content.js   # checks copy against the claims policy and SEO length rules
+cd tools
+npm install          # first time only (image tool + test browser driver)
+npm run build        # regenerate every page, sitemap.xml, redirects and IMAGE-LIST.csv
+npm run images       # process new photos placed in tools/images/custom/
+npm run serve        # preview at http://localhost:8080
+npm run validate     # check text against the writing rules
+npm run qa           # links, SEO tags, images, overflow at 7 screen widths, forms, WhatsApp, menus
+npm run qa:all       # the same on every page at every width
+npm run qa:keyboard  # keyboard / accessibility checks
+npm run qa:vitals    # LCP, CLS and page weight
 ```
 
-Every product page is generated from **one template** (`src/pages/product.js`) and every category from one template
-(`src/pages/category.js`), so a design change applies everywhere at once.
-
-## Browser support
-
-Current Chrome, Edge, Safari (iOS 14+), Firefox and Samsung Internet. Animations respect `prefers-reduced-motion`.
+Every product page is generated from one template, so design changes apply everywhere at once.
+Fonts: Schibsted Grotesk (SIL Open Font Licence), self-hosted. Temporary photos: Unsplash licence (credits in IMAGE-LIST.csv).
