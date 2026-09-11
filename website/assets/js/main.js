@@ -379,6 +379,29 @@
     });
   });
 
+  /* Service explorer tabs (ARIA tabs pattern: click, arrow keys, Home/End) */
+  $$('[data-explorer]').forEach(function (ex) {
+    var tabs = $$('[role="tab"]', ex), panels = $$('[role="tabpanel"]', ex);
+    function select(i, focus) {
+      tabs.forEach(function (t, k) { var on = k === i; t.classList.toggle('is-active', on); t.setAttribute('aria-selected', on ? 'true' : 'false'); t.tabIndex = on ? 0 : -1; });
+      panels.forEach(function (p, k) { p.classList.toggle('is-active', k === i); });
+      if (focus) tabs[i].focus();
+      var strip = tabs[i].parentNode;
+      if (strip.scrollWidth > strip.clientWidth) strip.scrollTo({ left: tabs[i].offsetLeft - 12, behavior: reduceMotion ? 'auto' : 'smooth' });
+    }
+    tabs.forEach(function (t, i) {
+      t.addEventListener('click', function () { select(i); });
+      t.addEventListener('keydown', function (e) {
+        var n = null, last = tabs.length - 1;
+        if (e.key === 'ArrowDown' || e.key === 'ArrowRight') n = i === last ? 0 : i + 1;
+        else if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') n = i === 0 ? last : i - 1;
+        else if (e.key === 'Home') n = 0;
+        else if (e.key === 'End') n = last;
+        if (n !== null) { e.preventDefault(); select(n, true); }
+      });
+    });
+  });
+
   /* Catalog search / jump */
   var catalog = $('[data-catalog]');
   if (catalog) {
