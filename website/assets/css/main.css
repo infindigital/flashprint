@@ -301,11 +301,11 @@ html.is-locked, html.is-locked body { overflow: hidden; }
 .hero__points li { display: flex; gap: .6rem; align-items: flex-start; }
 .hero__points svg { width: 18px; height: 18px; color: var(--orange-ink); margin-top: .15rem; }
 .hero__media { position: relative; margin: 0; }
-.hero__main { position: relative; aspect-ratio: 4 / 5; max-height: 600px; width: 100%; border-radius: var(--r); overflow: hidden; background: var(--ink-2); }
+.hero__main { position: relative; aspect-ratio: 4 / 3; max-height: 520px; width: 100%; border-radius: var(--r); overflow: hidden; background: var(--ink-2); }
 /* Slideshow: every slide is stacked; the active one fades in and slowly settles (Ken Burns) */
 .hero__main img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity 1.1s var(--ease); }
 .hero__main img.is-active { opacity: 1; animation: heroDrift 7s ease-out both; }
-.hero__inset { position: absolute; left: clamp(-3rem, -2vw, -1rem); bottom: 2.5rem; width: 42%; aspect-ratio: 1; border-radius: var(--r); overflow: hidden; border: 6px solid var(--white); box-shadow: var(--shadow-2); background: var(--paper-2); z-index: 2; }
+.hero__inset { position: absolute; left: clamp(-3rem, -2vw, -1rem); bottom: 1.75rem; width: 34%; aspect-ratio: 1; border-radius: var(--r); overflow: hidden; border: 6px solid var(--white); box-shadow: var(--shadow-2); background: var(--paper-2); z-index: 2; }
 .hero__inset img { width: 100%; height: 100%; object-fit: cover; }
 .hero__tag { position: absolute; right: 1rem; top: 1rem; z-index: 2; display: inline-flex; align-items: center; gap: .5rem; padding: .45rem .75rem; background: rgba(255,255,255,.94); border-radius: var(--r-sm); font-size: var(--fs-xs); font-weight: 600; color: var(--ink); box-shadow: var(--shadow-1); }
 .hero__tag i { width: 8px; height: 8px; border-radius: 50%; background: var(--orange); animation: pulseDot 2s ease-in-out infinite; }
@@ -1095,4 +1095,39 @@ html.is-locked, html.is-locked body { overflow: hidden; }
 @media print {
   .topbar, .site-header, .site-footer, .cta-band, .m-actions, .subnav, .modal, .lightbox, .gallery__thumbs { display: none !important; }
   body { color: #000; }
+}
+
+/* ---------- Topic icons for text-heavy blocks ---------- */
+.ico-badge { display: inline-grid; place-items: center; width: 44px; height: 44px; border-radius: var(--r); background: var(--orange-tint); color: var(--orange-ink); flex: none; margin-bottom: var(--s-3); }
+.ico-badge svg { width: 22px; height: 22px; stroke-width: 1.6; }
+.ico-badge--sm { width: 36px; height: 36px; margin-bottom: var(--s-2); }
+.ico-badge--sm svg { width: 18px; height: 18px; }
+.whys li .ico-badge { background: var(--white); box-shadow: var(--shadow-1); }
+.sec-ico { display: flex; align-items: center; gap: var(--s-4); margin-bottom: var(--s-4); }
+.sec-ico .ico-badge { margin: 0; width: 48px; height: 48px; }
+.sec-ico .ico-badge svg { width: 24px; height: 24px; }
+.sec-ico h2 { margin: 0; font-size: clamp(1.4rem, 1.2rem + .9vw, 1.85rem); }
+.highlights h3::before { content: none; }
+.spec dt { display: flex; gap: .6rem; align-items: flex-start; }
+.spec__ico { display: inline-grid; place-items: center; width: 26px; height: 26px; border-radius: var(--r-sm); background: var(--orange-tint); color: var(--orange-ink); flex: none; margin-top: -.15rem; }
+.spec__ico svg { width: 15px; height: 15px; stroke-width: 1.8; }
+.has-ico { display: flex; align-items: center; gap: .55rem; }
+.has-ico svg { width: 20px; height: 20px; color: var(--orange-ink); flex: none; stroke-width: 1.7; }
+@media (max-width: 559px) { .sec-ico { gap: var(--s-3); } .sec-ico .ico-badge { width: 40px; height: 40px; } .sec-ico .ico-badge svg { width: 20px; height: 20px; } }
+
+/* Link pills with a small product photo */
+.link-pill--thumb { display: inline-flex; align-items: center; gap: .45rem; padding-left: .3rem; }
+.link-pill__img { width: 24px; height: 24px; border-radius: 999px; overflow: hidden; flex: none; background: var(--paper-2); }
+.link-pill__img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* Catalog-only items: photo + name linking to the closest page */
+.pcard--link .pcard__note { margin-top: 0; padding-top: 0; }
+
+/* ---------- Sticky columns: the shorter side stays in view while the longer side scrolls ---------- */
+@media (min-width: 900px) {
+  .split { align-items: start; }
+  .split > .split__media { position: sticky; top: calc(var(--header-h) + 2rem); }
+  .faq-wrap > .sec-head { position: sticky; top: calc(var(--header-h) + 2rem); align-self: start; }
+  .local > :first-child { position: sticky; top: calc(var(--header-h) + 2rem); align-self: start; }
+  .apps__img { position: sticky; top: calc(var(--header-h) + 5rem); }
 }
