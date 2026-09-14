@@ -2,6 +2,35 @@
 
 Source of truth: `Seo Sheet/Flash Print Plan.xlsx` (all 18 sheets read; snapshot in `tools/data/workbook.json`).
 
+## Client keyword priorities (overrides the workbook where they conflict)
+
+Three pages are the ranking targets. Everything else supports them.
+
+| Page | URL | Primary keyword | What changed |
+|---|---|---|---|
+| Home | `/` | **corporate gifts Dubai** | Retargeted from "printing services / print shop in Dubai". New title, meta, H1, hero, imagery, a gift-range section, gift-led product row, gift-specific process, local copy and 8 FAQs. Carries a `Service` entity ("Corporate Gifts in Dubai") alongside Organization/LocalBusiness, WebSite and FAQPage. |
+| Exhibition booth building | `/exhibition-booth-building-dubai/` | **exhibition booth building Dubai** (also "booth building Dubai") | New page. Covers the stand as a structure — design, joinery and modular systems, flooring, lighting, storage, build-up, dismantle — which `/exhibition-stand-printing-dubai/` (graphics only) does not. ~2,370 words, Service + FAQPage + BreadcrumbList. |
+| Printing services | `/printing-services-dubai/` | printing services in Dubai | Kept its keyword. Added a "Corporate gifts and exhibition booth building" section, three more FAQs, two more related categories and the two priority pages in its featured products. |
+
+### Cannibalisation resolved
+
+Moving "corporate gifts Dubai" onto the home page left it competing with the category hub, which the workbook gave the
+same keyword. The hub now takes the workbook's own secondary term:
+
+| Page | Keyword before | Keyword now |
+|---|---|---|
+| `/` (home) | printing services in Dubai | **corporate gifts Dubai** |
+| `/corporate-gifts-dubai/` | corporate gifts Dubai | **promotional gifts Dubai** (title, meta and H1 rewritten to match) |
+
+`/printing-services-dubai/` keeps "printing services in Dubai", so the home page no longer competes with it either.
+
+### Internal linking changed to match
+
+- Products mega-menu: column 1 is now **Corporate gifts**, column 2 **Exhibitions & events** (booth building first).
+- Footer: corporate gifts and event & exhibition lead the Services column; booth building leads the Products column.
+- `Organization` / `LocalBusiness` description and the mega-menu blurbs now name corporate gifts and booth building.
+- Booth building is a related product on every other event & exhibition page, and is named in the category intro.
+
 ## Site architecture
 
 | Page type | Count | Source sheet |
@@ -9,12 +38,13 @@ Source of truth: `Seo Sheet/Flash Print Plan.xlsx` (all 18 sheets read; snapshot
 | Home | 1 | Page & Content Plan |
 | Service hubs (Printing Services, Digital, Offset, Signage, Corporate Printing) | 5 | Page & Content Plan, Keyword Map |
 | Category hubs (all 26 categories, indexable, unique copy) | 26 | Category SEO Expansion |
-| Product / service pages | 112 | Product SEO Expansion (every "YES" row) + 6 Page & Content Plan pages |
+| Product / service pages | 113 | Product SEO Expansion (every "YES" row) + 6 Page & Content Plan pages |
 | Industry pages + overview | 8 | Page & Content Plan |
 | Blog articles + index | 18 | Blog SEO Content (all 17 topics) |
 | All-products catalog (`/printing-products-dubai/`, kept from the old site) | 1 | — |
 | About, How It Works, Contact, Portfolio, Privacy, Terms | 6 | Page & Content Plan |
-| **Indexable total** | **177** | + custom 404 (noindex) |
+| Exhibition booth building (client priority page) | 1 | Added after the workbook |
+| **Indexable total** | **178** | + custom 404 (noindex) |
 
 All **26 categories** and all **132 Master Catalog entries** are represented. Catalog-only items (the 19 rows marked
 "Category page / catalog item") appear as cards on their category page with Enquire and WhatsApp buttons, as the workbook

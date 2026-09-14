@@ -2,6 +2,21 @@
 
 Items the website cannot know on its own. Nothing below was invented; each is either a placeholder or a statement to confirm.
 
+## Priority photography for the three ranking pages
+
+The home page, the booth building page and the printing services page are the three the business wants to rank.
+Everything on them works, but their photos are still temporary stock and should be replaced first
+(open IMAGE-LIST.csv and filter the "Slot" column for the keys below — each row gives the exact pixel size and a brief).
+
+- [ ] **Home page hero** (`static:home-hero`, plus `static:home-hero-inset` and `static:home-why`) — a real branded gift
+      set, an open gift box and a close-up of a logo being debossed or engraved. This photo is also the home page's
+      social-share image, so it is what appears when the link is sent on WhatsApp or LinkedIn.
+- [ ] **Exhibition booth building** (`p:exhibition-booth-building-dubai:hero`, `:detail`, `:application`) — the current
+      hero is a stock trade-show photo that shows other companies' logos on the stands behind. Replace it with a booth
+      you have actually built, ideally one wide shot, one close-up of the structure or frame, and one of the finished
+      stand in use. Real project photos here are worth more than anything else on that page.
+- [ ] **Printing services** (`svc:printing-services-dubai`, `svc:printing-services-dubai:2`) — your own production area.
+
 ## Must do before launch
 
 - [ ] **Connect the enquiry form** — set `formEndpoint` (+ `formAccessKey`) in `content/site.js` and rebuild
