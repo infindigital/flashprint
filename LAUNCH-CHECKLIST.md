@@ -8,9 +8,10 @@ The home page, the booth building page and the printing services page are the th
 Everything on them works, but their photos are still temporary stock and should be replaced first
 (open IMAGE-LIST.csv and filter the "Slot" column for the keys below — each row gives the exact pixel size and a brief).
 
-- [x] **Home page hero slideshow** (`static:home-hero`, `static:home-slide-2`, `-3`, `-4`) and **inset** (`static:home-hero-inset`)
-      — replaced with your gift set, diary set, bottles and mugs, gift boxes and polo shirt photos (masters kept in
-      `tools/images/custom/home/`). Slide 1 is also the home page's social-share image on WhatsApp and LinkedIn.
+- [x] **Home page hero slideshow** (`static:home-hero`, `static:home-slide-2` to `-4`) and **small inset photo**
+      (`static:home-hero-inset`) — replaced with your bottles and mugs, gift boxes, gift set and diary set photos, plus the
+      polo shirt photo in the inset (masters kept in `tools/images/custom/home/`). The gift set photo (`static:home-hero`)
+      is also the home page's social-share image on WhatsApp and LinkedIn.
 - [ ] **Home page "Why Flash Print" photo** (`static:home-why`) — still temporary stock: a close-up of a logo being
       debossed or engraved on a gift item, 4:5 portrait.
 - [ ] **Exhibition booth building** (`p:exhibition-booth-building-dubai:hero`, `:detail`, `:application`) — the current
