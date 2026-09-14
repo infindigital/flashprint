@@ -31,6 +31,36 @@ same keyword. The hub now takes the workbook's own secondary term:
 - `Organization` / `LocalBusiness` description and the mega-menu blurbs now name corporate gifts and booth building.
 - Booth building is a related product on every other event & exhibition page, and is named in the category intro.
 
+## Primary keyword on every page
+
+Every indexable page has one primary keyword, and it appears in all four places: the `<title>`, the H1, the meta
+description and the opening paragraph (products: first overview paragraph; categories, services, industries: first intro
+paragraph; blog: first paragraph of the article; static pages: the hero lead).
+
+- **Where the keywords live:** products and categories in `tools/data/catalog.js` (from the workbook), services, industries,
+  blog and static pages in `tools/data/page-list.js`.
+- **Natural variant, not keyword stuffing:** the keyword's words appear in order, and only *in / and / for / the / of / a*
+  or punctuation may sit between them. Singular and plural are treated as the same. So "3D letter signs Dubai" is written
+  "3D Letter Signs in Dubai", and "printing checklist new business Dubai" is written "Printing Checklist for New Businesses in Dubai".
+  Google treats these as the same query. The keyword is used once per placement, with no repetition.
+- **Dubai in the H1:** the keyword includes "Dubai", so every H1 now names Dubai (client decision), usually followed by a
+  short qualifier that keeps the heading distinct from the title, e.g. "Acrylic Signage in Dubai for Interiors".
+- **No `<meta name="keywords">` tag.** Google ignores it, Bing can treat it as a spam signal, and it would publish the keyword list to competitors.
+
+Static pages (from the Page & Content Plan):
+
+| Page | Primary keyword |
+|---|---|
+| `/` | corporate gifts Dubai (client priority) |
+| `/about/` | printing company Dubai |
+| `/how-it-works/` | printing process Dubai |
+| `/contact/` | printing quote Dubai |
+| `/portfolio/` | printing portfolio Dubai |
+| `/blog/` | printing guide Dubai |
+| `/industries/` | printing services for businesses in Dubai |
+| `/printing-products-dubai/` | printing products Dubai (not in the workbook) |
+| `/privacy-policy/`, `/terms-and-conditions/` | none, on purpose: legal pages should not target searches |
+
 ## Site architecture
 
 | Page type | Count | Source sheet |
