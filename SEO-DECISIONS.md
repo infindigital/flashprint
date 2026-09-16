@@ -118,7 +118,8 @@ site), Catalogues, Invitations, Banners, Office Signage, Shop Signage.
 
 The three catalogues the client supplied (Corporate Gifts Catalogue 2026, Beyond Gifting 2026 and the 2026 product
 collections catalogue) carry whole product lines the SEO workbook never listed. Each was given its own indexable page
-under **Corporate Gifts & Promotional Items**, taking the category from 6 listed items to 13.
+under **Corporate Gifts & Promotional Items**, taking the category from 6 listed items to 21 (eight pages in a first
+pass, eight more in a second).
 
 | URL | Primary keyword | Covers |
 |---|---|---|
@@ -130,6 +131,14 @@ under **Corporate Gifts & Promotional Items**, taking the category from 6 listed
 | `/eco-friendly-corporate-gifts-dubai/` | eco friendly corporate gifts Dubai | Bamboo, cork, RPET, recycled paper and seed-pencil ranges |
 | `/lanyard-printing-dubai/` | lanyard printing Dubai | Sublimated, screen printed and woven lanyards, badge reels, card holders |
 | `/custom-keychains-dubai/` | custom keychains Dubai | Promoted from a catalog-only card (see below) |
+| `/branded-portfolio-folders-dubai/` | branded portfolio folders Dubai | A4/A5 padfolios and zip organisers, wireless charging folders |
+| `/branded-wireless-chargers-dubai/` | branded wireless chargers Dubai | Charging pads, 3-in-1 stands, bamboo docks, lamp chargers |
+| `/branded-earbuds-headphones-dubai/` | branded earbuds and headphones Dubai | True wireless earbuds and over-ear headphones |
+| `/business-card-holders-dubai/` | business card holders Dubai | Card holders, pop-up cases, wallets, passport covers |
+| `/arabic-coffee-gift-sets-dubai/` | Arabic coffee gift sets Dubai | Flask and finjan cup sets, Sadu-pattern ranges for Ramadan, Eid, National Day |
+| `/branded-desk-accessories-dubai/` | branded desk accessories Dubai | Bamboo organisers, felt desk sets, charging mouse pads |
+| `/name-badge-printing-dubai/` | name badge printing Dubai | Staff name badges with magnet/pin fittings, button badges |
+| `/branded-travel-accessories-dubai/` | branded travel accessories Dubai | Passport covers, luggage tags, travel adapters, pouches |
 
 **Keychains promoted to its own page.** The workbook marked Keychains as a catalog card pointing at
 `/metal-engraving-dubai/`. The catalogues carry a full keychain range in metal, PU leather, bamboo and acrylic with

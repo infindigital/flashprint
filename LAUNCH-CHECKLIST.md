@@ -12,8 +12,8 @@ Everything on them works, but their photos are still temporary stock and should 
       (`static:home-hero-inset`) — replaced with your bottles and mugs, gift boxes, gift set and diary set photos, plus the
       polo shirt photo in the inset (masters kept in `tools/images/custom/home/`). The gift set photo (`static:home-hero`)
       is also the home page's social-share image on WhatsApp and LinkedIn.
-- [ ] **Home page "Why Flash Print" photo** (`static:home-why`) — still temporary stock: a close-up of a logo being
-      debossed or engraved on a gift item, 4:5 portrait.
+- [x] **Home page "Why Flash Print" photo** (`static:home-why`) — replaced with a debossed-logo notebook from the supplier
+      catalogues. Swap in a photo of your own debossing work when you have one.
 - [ ] **Exhibition booth building** (`p:exhibition-booth-building-dubai:hero`, `:detail`, `:application`) — the current
       hero is a stock trade-show photo that shows other companies' logos on the stands behind. Replace it with a booth
       you have actually built, ideally one wide shot, one close-up of the structure or frame, and one of the finished
@@ -32,12 +32,14 @@ Everything on them works, but their photos are still temporary stock and should 
 - [ ] **Portfolio** — all 16 portfolio items use temporary stock photos. Replace with real completed projects
       (IMAGE-LIST.csv → folder `portfolio`), and adjust titles/captions in `content/portfolio.js`.
 - [ ] **Replace temporary product photography** with the custom image library (IMAGE-LIST.csv has every file, its exact size and a brief).
-      About 80 slots now use photography taken from the three 2026 supplier catalogues you supplied (Corporate Gifts Catalogue 2026,
+      About 105 slots now use photography taken from the three 2026 supplier catalogues you supplied (Corporate Gifts Catalogue 2026,
       Beyond Gifting 2026 and the 2026 product collections catalogue). Those rows show **Custom photo** in IMAGE-LIST.csv.
 - [ ] **Confirm you may publish the supplier catalogue photography.** These are the suppliers' product images, not photos we shot.
       Most suppliers allow resellers to use them, but it is worth confirming in writing before launch. Images showing a real
       third party's logo (for example the engraved ADNOC and Safran keychains, and a Toshiba-branded lanyard) were deliberately
       left out for the same reason — publishing another company's mark needs their permission.
+      Several lifestyle photos in the catalogues are AI-generated and carry a small watermark (a sparkle or "ai" badge in the
+      corner). None of those are used on the site; where no clean alternative existed the slot stayed on stock.
 - [ ] **Legal pages** — Privacy Policy and Terms are sensible templates for a UAE printing business; have them reviewed
       and aligned with the terms on your quotations.
 - [ ] **Analytics** — add the GA4 ID (`ga4` in `content/site.js`), verify the domain in Google Search Console and submit
