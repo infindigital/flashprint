@@ -114,6 +114,32 @@ stickers their own page.
 Built from the Page & Content Plan because no Master Catalog row covers them: Letterheads (also a real product on the old
 site), Catalogues, Invitations, Banners, Office Signage, Shop Signage.
 
+## Pages added from the 2026 supplier catalogues (September 2026)
+
+The three catalogues the client supplied (Corporate Gifts Catalogue 2026, Beyond Gifting 2026 and the 2026 product
+collections catalogue) carry whole product lines the SEO workbook never listed. Each was given its own indexable page
+under **Corporate Gifts & Promotional Items**, taking the category from 6 listed items to 13.
+
+| URL | Primary keyword | Covers |
+|---|---|---|
+| `/corporate-gift-sets-dubai/` | corporate gift sets Dubai | Multi-item boxed sets, inserts, foiled lids, ribbon and belly bands |
+| `/branded-water-bottles-dubai/` | branded water bottles Dubai | Vacuum flasks, tumblers, sports and glass bottles |
+| `/promotional-bags-dubai/` | promotional bags Dubai | Cotton, canvas, jute, non-woven and RPET bags, backpacks, laptop bags |
+| `/branded-power-banks-dubai/` | branded power banks Dubai | Magnetic wireless, cabled, cork and bamboo power banks |
+| `/branded-bluetooth-speakers-dubai/` | branded Bluetooth speakers Dubai | Bamboo, fabric-wrapped and retro portable speakers |
+| `/eco-friendly-corporate-gifts-dubai/` | eco friendly corporate gifts Dubai | Bamboo, cork, RPET, recycled paper and seed-pencil ranges |
+| `/lanyard-printing-dubai/` | lanyard printing Dubai | Sublimated, screen printed and woven lanyards, badge reels, card holders |
+| `/custom-keychains-dubai/` | custom keychains Dubai | Promoted from a catalog-only card (see below) |
+
+**Keychains promoted to its own page.** The workbook marked Keychains as a catalog card pointing at
+`/metal-engraving-dubai/`. The catalogues carry a full keychain range in metal, PU leather, bamboo and acrylic with
+engraving, pad print and epoxy doming, so it now owns `/custom-keychains-dubai/`
+(`tools/data/catalog.js` → `STANDALONE_OVERRIDES`). The old WordPress redirect
+`/product/keychains-printing-dubai/` was repointed from the category anchor to the new page.
+
+No existing keyword was reused: every new page targets a term no other page owned, and each is linked from the
+Corporate Gifts hub and cross-linked from the related products in the same category.
+
 ## Keyword conflicts resolved
 
 | Page | Workbook keyword | Used | Why |

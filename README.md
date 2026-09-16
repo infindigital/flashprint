@@ -10,7 +10,7 @@ No framework, no CMS, no database, no server-side code.
 Flashprint Website/
 ├── Preview Website.cmd ← DOUBLE-CLICK THIS to view the site on your computer (see "Viewing the site locally")
 ├── preview.js          ← the tiny local web server that "Preview Website.cmd" starts
-├── website/            ← THE WEBSITE (179 HTML pages + CSS, JS, images). This is what gets published.
+├── website/            ← THE WEBSITE (187 HTML pages + CSS, JS, images). This is what gets published.
 ├── content/            ← ALL EDITABLE TEXT (business details, page text, products, blog). See content/README.md
 ├── tools/              ← small helper that turns content/ into the HTML in website/ (needs Node.js only when you use it)
 ├── IMAGE-LIST.csv      ← EVERY image file: path, exact width × height, what it is, which page, brief for the new photo
@@ -100,4 +100,6 @@ npm run qa:vitals    # LCP, CLS and page weight
 ```
 
 Every product page is generated from one template, so design changes apply everywhere at once.
-Fonts: Schibsted Grotesk (SIL Open Font Licence), self-hosted. Temporary photos: Unsplash licence (credits in IMAGE-LIST.csv).
+Fonts: Schibsted Grotesk (SIL Open Font Licence), self-hosted.
+Photos: the corporate gifts, apparel, packaging and engraving pages use images from the three 2026 supplier catalogues
+(marked "Custom photo" in IMAGE-LIST.csv); the rest are still temporary Unsplash stock, credited in the same file.
