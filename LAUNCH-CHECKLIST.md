@@ -32,14 +32,14 @@ Everything on them works, but their photos are still temporary stock and should 
 - [ ] **Portfolio** — all 16 portfolio items use temporary stock photos. Replace with real completed projects
       (IMAGE-LIST.csv → folder `portfolio`), and adjust titles/captions in `content/portfolio.js`.
 - [ ] **Replace temporary product photography** with the custom image library (IMAGE-LIST.csv has every file, its exact size and a brief).
-      About 105 slots now use photography taken from the three 2026 supplier catalogues you supplied (Corporate Gifts Catalogue 2026,
+      About 115 slots now use photography taken from the three 2026 supplier catalogues you supplied (Corporate Gifts Catalogue 2026,
       Beyond Gifting 2026 and the 2026 product collections catalogue). Those rows show **Custom photo** in IMAGE-LIST.csv.
 - [ ] **Confirm you may publish the supplier catalogue photography.** These are the suppliers' product images, not photos we shot.
       Most suppliers allow resellers to use them, but it is worth confirming in writing before launch. Images showing a real
       third party's logo (for example the engraved ADNOC and Safran keychains, and a Toshiba-branded lanyard) were deliberately
       left out for the same reason — publishing another company's mark needs their permission.
-      Several lifestyle photos in the catalogues are AI-generated and carry a small watermark (a sparkle or "ai" badge in the
-      corner). None of those are used on the site; where no clean alternative existed the slot stayed on stock.
+      Several lifestyle photos in the catalogues are AI-generated. At your request 12 of them are used (people and event
+      scenes); each carried a small generator watermark in the corner, which was cropped out rather than painted over.
 - [ ] **Legal pages** — Privacy Policy and Terms are sensible templates for a UAE printing business; have them reviewed
       and aligned with the terms on your quotations.
 - [ ] **Analytics** — add the GA4 ID (`ga4` in `content/site.js`), verify the domain in Google Search Console and submit
