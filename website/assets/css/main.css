@@ -514,7 +514,12 @@ html.is-locked, html.is-locked body { overflow: hidden; }
 .split__media { position: relative; border-radius: var(--r); overflow: hidden; aspect-ratio: 5 / 6; max-height: 660px; width: 100%; background: var(--paper-2); }
 .split__media img { width: 100%; height: 100%; object-fit: cover; }
 .split__caption { position: absolute; left: 0; bottom: 0; right: 0; padding: var(--s-6) var(--s-5) var(--s-4); background: linear-gradient(0deg, rgba(21,23,28,.7), transparent); color: #fff; font-size: var(--fs-sm); }
-@media (max-width: 899px) { .split, .split--wide-media { grid-template-columns: 1fr; } .split__media { aspect-ratio: 4 / 3; } }
+/* Landscape media: for slots that are wider than they are tall (e.g. the 3:2 category photo on the home page).
+   The default 5/6 portrait frame would crop a landscape photo down to a narrow centre slice. Matching the
+   frame to the photo also shortens the media column, which is what closed the gap beside the shorter text. */
+.split__media--landscape { aspect-ratio: 3 / 2; max-height: none; }
+.split--occasions > div > p { margin-top: var(--s-4); max-width: 46ch; color: var(--ink-2); }
+@media (max-width: 899px) { .split, .split--wide-media { grid-template-columns: 1fr; } .split__media { aspect-ratio: 4 / 3; } .split__media--landscape { aspect-ratio: 3 / 2; } }
 
 .numbered { list-style: none; margin-top: var(--s-6); border-top: 1px solid var(--line); }
 .numbered li { display: grid; grid-template-columns: 3rem 1fr; gap: var(--s-3); padding: var(--s-5) 0; border-bottom: 1px solid var(--line); }
